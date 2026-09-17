@@ -1,0 +1,4 @@
+paddlepaddle
+paddleocr
+customtkinter
+pillow
