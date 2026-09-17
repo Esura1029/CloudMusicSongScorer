@@ -10,7 +10,7 @@ class OCREngine:
     """基于PaddleOCR的文字识别引擎
 
     封装PaddleOCR的使用，提供文字识别和定位功能。
-    主要用于识别网易云音乐界面中的关键文字和按钮位置。
+    主要用于识别音乐APP界面中的关键文字和按钮位置。
     """
 
     def __init__(self):
@@ -29,7 +29,7 @@ class OCREngine:
 
     @staticmethod
     def _filter_no_lyrics_placeholder(text: str) -> str:
-        """内置过滤器：去除网易云音乐的无歌词占位提示文字
+        """内置过滤器：去除音乐APP的无歌词占位提示文字
 
         将 '暂无歌词，沉浸享受' 替换为空串，避免干扰目标文字匹配，
         同时保留 '歌词' 等其他文字不受影响。

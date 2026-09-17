@@ -1,4 +1,4 @@
-"""网易云音乐自动评分助手 - GUI界面"""
+"""音乐APP自动评分助手 - GUI界面"""
 
 import threading
 import sys
@@ -55,7 +55,7 @@ class MusicBotGUI(ctk.CTk):
 
     def __init__(self):
         super().__init__()
-        self.title("网易云音乐评分助手 v2.0")
+        self.title("音乐APP评分助手 v2.0")
         self.geometry("650x850")
 
         self.songs_rated = 0
@@ -242,7 +242,7 @@ class MusicBotGUI(ctk.CTk):
         old_stdout = sys.stdout
         try:
             sys.stdout = self.log_redirector
-            print("[INFO] 正在检查 ADB 连接及网易云环境...")
+            print("[INFO] 正在检查 ADB 连接及APP环境...")
             run_main_task(self.update_progress)
             self.after(
                 0,
