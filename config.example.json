@@ -1,0 +1,8 @@
+{
+    "adb_path": "path/to/adb.exe",
+    "device_id": "127.0.0.1:7555",
+    "screen_width": 720,
+    "screen_height": 1280,
+    "min_star": 2,
+    "max_star": 4
+}
